@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Can I Use? | Health Journal</title>
+    <meta
+      name="description"
+      content="Check whether mouth tape or nasal strips may be appropriate based on a few quick inputs."
+    />
+    <meta name="theme-color" content="#56d7e3" />
+    <link rel="canonical" href="https://nasalstrips.in/can-i-use.html" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement">
+      <div class="section-inner">
+        <strong>Can I Use?</strong> Quick, practical guidance for deciding when mouth tape or nasal strips may be appropriate.
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand-mark" href="index.html">
+          <span class="brand-dot"></span>
+          Health Journal
+        </a>
+        <nav class="nav-links desktop-nav" aria-label="Primary navigation">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="science-nasal-strips.html">Nasal Strips Science</a>
+          <a class="nav-link" href="science-mouth-tape.html">Mouth Tape Science</a>
+          <a class="nav-link" href="nasal-vs-mouth-breathing.html">Nasal vs Mouth</a>
+          <a class="nav-link" href="performance.html">Performance</a>
+          <a class="nav-link" href="sleep-recovery.html">Sleep & Recovery</a>
+          <a class="nav-link active" href="can-i-use.html">Can I Use?</a>
+        </nav>
+        <details class="mobile-menu">
+          <summary>Menu</summary>
+          <nav class="mobile-menu-panel" aria-label="Mobile navigation">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="science-nasal-strips.html">Nasal Strips Science</a>
+            <a class="nav-link" href="science-mouth-tape.html">Mouth Tape Science</a>
+            <a class="nav-link" href="nasal-vs-mouth-breathing.html">Nasal vs Mouth</a>
+            <a class="nav-link" href="performance.html">Performance</a>
+            <a class="nav-link" href="sleep-recovery.html">Sleep & Recovery</a>
+            <a class="nav-link active" href="can-i-use.html">Can I Use?</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <main>
+      <section class="article-hero">
+        <div class="section-inner">
+          <div class="article-hero-grid">
+            <div>
+              <span class="eyebrow">Decision guide</span>
+              <h1 class="article-title">Can I use it?</h1>
+            </div>
+            <div class="article-panel">
+              <h3>How this works</h3>
+              <p>
+                Fill in the form, submit it, and the page will show a yes or no result with the reason behind it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-inner">
+          <div class="utility-grid">
+            <div class="form-card">
+              <h3>Can I use Mouth Tape?</h3>
+              <p>We check age, BMI, CPAP use, and the exclusion conditions you listed.</p>
+              <form id="mouthTapeForm" class="form-grid">
+                <div class="field">
+                  <label for="mouthAge">Age</label>
+                  <input id="mouthAge" name="age" type="number" min="0" required />
+                </div>
+                <div class="field">
+                  <label for="mouthHeight">Height (cm)</label>
+                  <input id="mouthHeight" name="height" type="number" min="1" required />
+                </div>
+                <div class="field">
+                  <label for="mouthWeight">Weight (kg)</label>
+                  <input id="mouthWeight" name="weight" type="number" min="1" step="0.1" required />
+                </div>
+                <fieldset class="field field-full fieldset">
+                  <legend>Do you use a CPAP?</legend>
+                  <div class="toggle-row">
+                    <label><input type="radio" name="cpap" value="yes" required /><span>Yes</span></label>
+                    <label><input type="radio" name="cpap" value="no" required /><span>No</span></label>
+                  </div>
+                </fieldset>
+                <fieldset class="field field-full fieldset">
+                  <legend>Do you have very low blood pressure?</legend>
+                  <div class="toggle-row">
+                    <label><input type="radio" name="lowBp" value="yes" required /><span>Yes</span></label>
+                    <label><input type="radio" name="lowBp" value="no" required /><span>No</span></label>
+                  </div>
+                </fieldset>
+                <fieldset class="field field-full fieldset">
+                  <legend>Do you have severe heart or respiratory issues?</legend>
+                  <div class="toggle-row">
+                    <label><input type="radio" name="heartResp" value="yes" required /><span>Yes</span></label>
+                    <label><input type="radio" name="heartResp" value="no" required /><span>No</span></label>
+                  </div>
+                </fieldset>
+                <fieldset class="field field-full fieldset">
+                  <legend>Do you have a sinus infection?</legend>
+                  <div class="toggle-row">
+                    <label><input type="radio" name="sinus" value="yes" required /><span>Yes</span></label>
+                    <label><input type="radio" name="sinus" value="no" required /><span>No</span></label>
+                  </div>
+                </fieldset>
+                <fieldset class="field field-full fieldset">
+                  <legend>Do you have an ear infection?</legend>
+                  <div class="toggle-row">
+                    <label><input type="radio" name="ear" value="yes" required /><span>Yes</span></label>
+                    <label><input type="radio" name="ear" value="no" required /><span>No</span></label>
+                  </div>
+                </fieldset>
+                <div class="field field-full">
+                  <button class="button" type="submit">Check Mouth Tape</button>
+                  <p class="form-help"></p>
+                </div>
+              </form>
+            </div>
+
+            <div class="form-card">
+              <h3>Can I use Nasal Strips?</h3>
+              <p>This check is based only on age, as requested.</p>
+              <form id="nasalStripsForm" class="form-grid">
+                <div class="field field-full">
+                  <label for="nasalAge">Age</label>
+                  <input id="nasalAge" name="age" type="number" min="0" required />
+                </div>
+                <div class="field field-full">
+                  <button class="button" type="submit">Check Nasal Strips</button>
+                  <p class="form-help"></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="result-modal" id="resultModal" aria-hidden="true">
+      <div class="result-panel" role="dialog" aria-modal="true" aria-labelledby="resultTitle">
+        <div class="result-status" id="resultStatus"></div>
+        <h3 id="resultTitle"></h3>
+        <p id="resultBody"></p>
+        <ul class="reason-list" id="reasonList"></ul>
+        <div class="modal-actions" id="modalActions"></div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>Health Journal. Simple breathing guidance, presented clearly.</div>
+        <div class="footer-links">
+          <a href="science-nasal-strips.html">Nasal Strips Science</a>
+          <a href="science-mouth-tape.html">Mouth Tape Science</a>
+          <a href="sleep-recovery.html">Sleep & Recovery</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        const resultModal = document.getElementById("resultModal");
+        const resultStatus = document.getElementById("resultStatus");
+        const resultTitle = document.getElementById("resultTitle");
+        const resultBody = document.getElementById("resultBody");
+        const reasonList = document.getElementById("reasonList");
+        const modalActions = document.getElementById("modalActions");
+
+        function openModal(options) {
+          resultStatus.textContent = options.approved ? "Yes" : "Not now";
+          resultStatus.className = "result-status " + (options.approved ? "yes" : "no");
+          resultTitle.textContent = options.title;
+          resultBody.textContent = options.body;
+          reasonList.innerHTML = "";
+          modalActions.innerHTML = "";
+
+          if (options.reasons && options.reasons.length) {
+            options.reasons.forEach(function (reason) {
+              const item = document.createElement("li");
+              item.textContent = reason;
+              reasonList.appendChild(item);
+            });
+            reasonList.hidden = false;
+          } else {
+            reasonList.hidden = true;
+          }
+
+          if (options.approved && options.cta) {
+            const buy = document.createElement("a");
+            buy.className = "button";
+            buy.href = options.cta.href;
+            buy.target = "_blank";
+            buy.rel = "noreferrer";
+            buy.textContent = options.cta.label;
+            modalActions.appendChild(buy);
+          }
+
+          const close = document.createElement("button");
+          close.className = options.approved && options.cta ? "button-secondary" : "button";
+          close.type = "button";
+          close.textContent = "Close";
+          close.addEventListener("click", closeModal);
+          modalActions.appendChild(close);
+
+          resultModal.classList.add("is-open");
+          resultModal.setAttribute("aria-hidden", "false");
+        }
+
+        function closeModal() {
+          resultModal.classList.remove("is-open");
+          resultModal.setAttribute("aria-hidden", "true");
+        }
+
+        resultModal.addEventListener("click", function (event) {
+          if (event.target === resultModal) {
+            closeModal();
+          }
+        });
+
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") {
+            closeModal();
+          }
+        });
+
+        document.getElementById("mouthTapeForm").addEventListener("submit", function (event) {
+          event.preventDefault();
+          const form = new FormData(event.currentTarget);
+          const age = Number(form.get("age"));
+          const heightCm = Number(form.get("height"));
+          const weightKg = Number(form.get("weight"));
+          const heightM = heightCm / 100;
+          const bmi = weightKg / (heightM * heightM);
+          const reasons = [];
+
+          if (age <= 10) {
+            reasons.push("Mouth tape is restricted here because the age entered is 10 or below.");
+          }
+          if (!(bmi < 35)) {
+            reasons.push("The BMI entered is " + bmi.toFixed(1) + ", which is not below 35.");
+          }
+          if (form.get("cpap") === "yes") {
+            reasons.push("You indicated that you use a CPAP.");
+          }
+          if (form.get("lowBp") === "yes") {
+            reasons.push("You indicated that you have very low blood pressure.");
+          }
+          if (form.get("heartResp") === "yes") {
+            reasons.push("You indicated that you have severe heart or respiratory issues.");
+          }
+          if (form.get("sinus") === "yes") {
+            reasons.push("You indicated that you have a sinus infection.");
+          }
+          if (form.get("ear") === "yes") {
+            reasons.push("You indicated that you have an ear infection.");
+          }
+
+          if (reasons.length === 0) {
+            openModal({
+              approved: true,
+              title: "Yes, you can use mouth tape.",
+              body: "Based on the details entered.",
+              cta: {
+                href: "https://www.pureflowtape.com/products/purerest-by-pureflow",
+                label: "Buy Now"
+              }
+            });
+            return;
+          }
+
+          openModal({
+            approved: false,
+            title: "Mouth tape is not recommended from this check.",
+            body: "This result is based on the conditions you entered.",
+            reasons: reasons
+          });
+        });
+
+        document.getElementById("nasalStripsForm").addEventListener("submit", function (event) {
+          event.preventDefault();
+          const form = new FormData(event.currentTarget);
+          const age = Number(form.get("age"));
+
+          if (age > 5) {
+            openModal({
+              approved: true,
+              title: "Yes, you can use nasal strips.",
+              body: "Based on the age entered.",
+              cta: {
+                href: "https://www.pureflowtape.com/products/pureflow-nasal-strips",
+                label: "Buy Now"
+              }
+            });
+            return;
+          }
+
+          openModal({
+            approved: false,
+            title: "Nasal strips are not recommended from this check.",
+            body: "Use nasal strips only when the age is above 5.",
+            reasons: ["The age entered is 5 or below."]
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
